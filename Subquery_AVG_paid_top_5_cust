@@ -17,4 +17,15 @@ B.first_name,
 B.last_name,
 D.city,
 E.country
-HAVING city IN 
+HAVING city IN ('Aurora',
+                'Pingxiang',
+                'Sivas',
+                'Dhule',
+                'Kurashiki',
+                'Xintai',
+                'Adoni',
+                'Celaya',
+                'Nezahualcyotl',
+                'Atlixco')
+ORDER BY "total_amount_paid" DESC
+LIMIT 5) AS average
